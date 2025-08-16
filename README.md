@@ -18,18 +18,14 @@ _pip install -r requirements.txt_
 
 Download datasets and pre-trained models, put them in the right paths
 --------------------------------------------------------------------------
-./DATA |
-  -- labels.json |
-  
-  -- templates.json |
-  
-  -- /modelnet40
-  
-    -- modelnet40_normal_resampled |
+./DATA |<br>
+-- labels.json |<br>
+-- templates.json |<br>
+-- /modelnet40<br>
+  -- modelnet40_normal_resampled |<br>
 
-./pretrained_ckpt |
-
--- ckpt_pointbert_ULIP-2.pt
+./pretrained_ckpt |<br>
+-- ckpt_pointbert_ULIP-2.pt<br>
 
 
 Get Started
