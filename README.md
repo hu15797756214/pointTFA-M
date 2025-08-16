@@ -31,6 +31,7 @@ Download datasets and pre-trained models, put them in the right paths
 
 -- ckpt_pointbert_ULIP-2.pt
 
+
 Get Started
 --------------------------------------------------------
 *Configs*
