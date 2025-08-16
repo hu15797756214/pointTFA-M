@@ -1,7 +1,7 @@
 **PointTFAm: Multi-Modal, Training-Free Adaptation for Point Cloud Understanding**
-
+====================================================================================
 **Introduction**
-
+-------------------------------------------------------------------------------------
 High-dimensional data are more sparsely distributed in space compared to low-dimensional data of the same size
 (e.g., 3D point cloud vs 2D images) —a phenomenon known as the “Curse of Dimensionality” (COD). Consequently, more
 samples are required to effectively fine-tune models for highdimensional tasks like 3D point cloud understanding, leading
