@@ -30,7 +30,8 @@ Download datasets and pre-trained models, put them in the right paths
 ./pretrained_ckpt |<br>
 -- ckpt_pointbert_ULIP-2.pt<br>
 
- **projection net**
+ **projection net**<br>
+ --------------------------
 The projection network adopts the **_PointCLIP_** model, because it features training-free capability and can well balance model complexity and performance.
 
 Get Started
