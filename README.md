@@ -31,12 +31,12 @@ Get Started
 --------------------------------------------------------
 *Configs*
 
-The running configurations can be modified in configs/dataset.yaml.
-For simplicity, we provide the hyperparamters achieving the overall best performance on 1~16 shots for a dataset, which accord with the scores reported in the paper. If respectively tuned for different shot numbers, the 1~16-shot performance can be further improved. You can edit the search_scale, search_step, init_beta and init_alpha for fine-grained tuning.
+The running configurations can be modified in "configs/dataset.yaml".
+For simplicity, we provide the hyperparamters achieving the overall best performance on 1~16 shots for a dataset, which accord with the scores reported in the paper. If respectively tuned for different shot numbers, the 1-16-shot performance can be further improved. You can edit the _search_scale_, _search_step_, _init_beta_ and _init_alpha_ for _fine-grained_ tuning.
 Note that the default load_cache and load_pre_feat are False for the first running, which will store the cache model and test features in cache/dataset/. For later running, they can be set as True for faster hyperparamters tuning.
 
 *Running*
 -------------------------------------------------
-For ScanObjectNN  dataset:
+For modelnet40 dataset:
 
 CUDA_VISIBLE_DEVICES=0 python main.py --config configs/modelnet40.yaml
