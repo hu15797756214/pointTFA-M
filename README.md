@@ -20,11 +20,15 @@ Download datasets and pre-trained models, put them in the right paths
 --------------------------------------------------------------------------
 ./DATA |
   -- labels.json |
+  
   -- templates.json |
+  
   -- /modelnet40
+  
     -- modelnet40_normal_resampled |
 
 ./pretrained_ckpt |
+
 -- ckpt_pointbert_ULIP-2.pt
 
 Get Started
