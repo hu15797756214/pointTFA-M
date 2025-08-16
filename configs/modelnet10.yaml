@@ -1,0 +1,60 @@
+# ------ Load Cache and Features ------
+load_cache:  True
+  #提取全部点云特征生成key，values
+load_pre_feat: True
+ #测试特征
+load_RMC: True
+   #是否要重新聚类还是下载好聚类好的
+load_img_feat:  True
+   #点生成深度图是否要加载
+
+load_image_cache: True
+
+image_load_RMC: True
+
+
+# data load
+NAME: ModelNet
+DATA_PATH: DATA/modelnet10/modelnet10_normal_resampled
+NUM_CATEGORY: 10
+USE_NORMALS: False
+
+# data process
+Extract_DATA:  True
+Extract_rate: 100
+
+Kmeans_DATA:  False
+n_clusters: 16
+
+Fewshot_DATA: False
+shots: 8
+
+
+# image_data process
+image_Extract_DATA: True  #随机提取数据
+image_Extract_rate: 100 # 1-100
+
+image_Kmeans_DATA: False    #是否要聚类
+image_n_clusters: 16
+
+image_Fewshot_DATA: False     #随机选者少样本
+image_shots: 16
+
+# ------ Hyperparamters ------
+search_hp: True
+#New view weights setting, a: 0.25, b: 0.50; c: 1.00; d: 1.00; e: 1.00; f: 0.25; g: 0.25; acc: 28.85;
+#
+search_scale: [50,50,50,100] #[30, 30, 30]
+search_step: [10,10,20,40]  #【10,10,10】
+
+init_alpha: 20
+init_beta: 10
+init_gamma: 15
+
+vw_search:
+  TIME: 4
+  RANGE: 1
+
+# ------ Basic Config ------
+dataset: 'modelnet10'
+augment_epoch: 1
