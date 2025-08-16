@@ -38,6 +38,11 @@ Note that the default load_cache and load_pre_feat are False for the first runni
 
 *Running*
 -------------------------------------------------
-For modelnet40 dataset:
+For modelnet40 dataset:<br>
+CUDA_VISIBLE_DEVICES=0 python **main_modelnet40_image_mm.py** --config **configs/modelnet40.yaml**
 
-CUDA_VISIBLE_DEVICES=0 python main.py --config configs/modelnet40.yaml
+For modelnet10 dataset:<br>
+CUDA_VISIBLE_DEVICES=0 python **main_modelnet10_image_mm.py** --config  **configs/modelnet10.yaml**
+
+For ScanObjectNN dataset:<br>
+CUDA_VISIBLE_DEVICES=0 python **main_ScanObjectNN_image_mm.py** --config **configs/ScanObjectNN.yaml**
