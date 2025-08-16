@@ -10,11 +10,11 @@ to increased computational costs. Meanwhile, although 3D point clouds provide co
 
 **Install environments**
 ---------------------------------------------
-_The code is tested with CUDA==11.0 and pytorch==1.10.1_
-_conda create -n tfa python=3.7.15_
-_conda activate tfa_
-_conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge_
-_pip install -r requirements.txt_
+_The code is tested with CUDA==11.0 and pytorch==1.10.1_<br>
+_conda create -n tfa python=3.7.15_<br>
+_conda activate tfa_<br>
+_conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge_<br>
+_pip install -r requirements.txt_<br>
 
 Download datasets and pre-trained models, put them in the right paths
 --------------------------------------------------------------------------
@@ -33,7 +33,7 @@ Get Started
 *Configs*
 
 The running configurations can be modified in "configs/dataset.yaml".
-For simplicity, we provide the hyperparamters achieving the overall best performance on 1~16 shots for a dataset, which accord with the scores reported in the paper. If respectively tuned for different shot numbers, the 1-16-shot performance can be further improved. You can edit the _search_scale_, _search_step_, _init_beta_ and _init_alpha_ for _fine-grained_ tuning.
+For simplicity, we provide the hyperparamters achieving the overall best performance on 1~16 shots for a dataset, which accord with the scores reported in the paper. If respectively tuned for different shot numbers, the 1-16-shot performance can be further improved. You can edit the **_search_scale_**,** _search_step_**,**_init_beta_** and **_init_alpha_** for **_fine-grained_** tuning.
 Note that the default load_cache and load_pre_feat are False for the first running, which will store the cache model and test features in cache/dataset/. For later running, they can be set as True for faster hyperparamters tuning.
 
 *Running*
