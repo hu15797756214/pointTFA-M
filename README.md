@@ -39,7 +39,7 @@ The projection network adopts the **_PointCLIP_** model, because it features tra
 
 Get Started
 --------------------------------------------------------
-*Configs*
+**Configs**
 
 The running configurations can be modified in "configs/dataset.yaml".
 For simplicity, we provide the hyperparamters achieving the overall best performance on 1~16 shots for a dataset, which accord with the scores reported in the paper. If respectively tuned for different shot numbers, the 1-16-shot performance can be further improved. You can edit the **_search_scale_**, **_search_step_**,**_init_beta_** and **_init_alpha_** for **_fine-grained_** tuning.
