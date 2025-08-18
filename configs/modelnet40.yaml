@@ -1,0 +1,72 @@
+# ------ Load Cache and Features ------
+
+load_cache:   True    #提取全部点云特征生成key，values
+load_pre_feat:  True        #测试特征
+load_RMC: True          #是否要重新聚类还是下载好聚类好的
+load_img_feat: True    #点生成深度图是否要加载
+
+load_image_cache:  True
+image_load_RMC:  True
+
+
+# data load
+NAME: ModelNet
+DATA_PATH: DATA/modelnet40/modelnet40_normal_resampled
+NUM_CATEGORY: 40
+USE_NORMALS: False
+
+# data efficiency
+Extract_DATA: True    #随机提取数据
+Extract_rate: 20 # 1-100    100的话就是full
+
+Kmeans_DATA: False   #是否要聚类
+n_clusters: 16
+
+Fewshot_DATA: False     #随机选者少样本
+shots: 1
+
+# image_data efficiency
+image_Extract_DATA:  True     #随机提取数据
+image_Extract_rate: 20 # 1-100
+
+image_Kmeans_DATA: False  #是否要聚类
+image_n_clusters: 16
+
+image_Fewshot_DATA: False    #随机选者少样本
+image_shots: 16
+
+# ------ Hyperparamters ------
+
+
+#New best setting, alpha: 10.71, beta: 19.04, gamma: 2.08; a: 65.00;,accuracy: 91.33
+#New view weights setting, a: 0.75, b: 1.00; c: 1.00; d: 0.50; e: 1.00; f: 0.25; g: 0.25; acc: 13.82;
+search_hp: True
+
+search_scale: [30, 30, 10,30,20] #30,30,10
+search_step: [50, 30, 10, 20,10]
+
+
+#search_step: [200, 30, 10, 20]
+
+#search_scale: [10, 10, 100,100,100] #30,30,10
+#search_step: [50, 50, 10, 20,10]
+
+
+
+init_alpha: 10
+init_beta: 20
+init_gamma: 16
+
+#init_alpha: 15
+#init_beta: 20
+#init_gamma: 8
+
+vw_search:
+  TIME: 4
+  RANGE: 1
+#  TIME: 20
+#  RANGE: 5
+
+# ------ Basic Config ------
+dataset: 'modelnet40'
+augment_epoch: 1

@@ -1,0 +1,50 @@
+# ------ Load Cache and Features ------
+load_cache: True   #提取全部点云特征生成key，values
+load_pre_feat: True  #测试特征
+load_RMC: True     #是否要重新聚类还是下载好聚类好的
+
+load_img_feat: True  #点生成深度图是否要加载
+load_image_cache: True
+image_load_RMC: True
+
+
+# data load
+NAME: ScanObjectNN
+DATA_PATH: '/home/www/program-file/PointTFA/DATA/scanobjectnn/main_split'
+dataset: scanobjectnn
+
+RMC_dir: RMC/scanobjectnn
+
+# data process
+Extract_DATA: True
+Extract_rate: 100
+
+Kmeans_DATA: False
+n_clusters: 16
+
+Fewshot_DATA: False
+shots: 16
+
+# image_data process
+image_Extract_DATA: True #随机提取数据
+image_Extract_rate: 100 # 1-100
+
+image_Kmeans_DATA: False   #是否要聚类
+image_n_clusters: 16
+
+image_Fewshot_DATA: False   #随机选者少样本
+image_shots: 16
+
+search_hp: True
+search_scale: [100, 100, 10,100]
+search_step: [10, 10, 20,20]
+init_beta: 28.51
+init_alpha: 10.05
+init_gamma: 2.08
+init_a : 100
+
+vw_search:
+  TIME: 4
+  RANGE: 1
+
+augment_epoch: 1
