@@ -41,9 +41,7 @@ Get Started
 --------------------------------------------------------
 **Configs**
 
-The running configurations can be modified in **"configs/dataset.yaml"**.
-For simplicity, we provide the hyperparamters achieving the overall best performance on **1~16** shots for a dataset, which accord with the scores reported in the paper. If respectively tuned for different shot numbers, the **1-16shot** performance can be further improved. You can edit the **_search_scale_**, **_search_step_**,**_init_beta_** and **_init_alpha_** for **_fine-grained_** tuning.
-Note that the default **load_cache** and **load_pre_feat** are False for the first running, which will store the cache model and test features in **cache/dataset/**. For later running, they can be set as True for faster hyperparamters tuning.
+The running configurations can be modified in **"configs/dataset.yaml"**. It includes parameter settings related to two categories: images and point clouds, and can also handle separate tuning for **1~16 shot** counts. You can edit **search_scale**, **search_step**, **init_beta**, **init_alpha**, **init_gamma**, and **init_alpha** for **fine-grained** tuning and hyperparameter search settings. Note that for the first run, the parameters **load_cache, load_pre_feat, load_RMC, load_img_feat, load_image_cache, and image_load_RMC** are set to **False** for data preprocessing. For subsequent runs, they can be set to True to speed up hyperparameter tuning.
 
 *Running*
 -------------------------------------------------
