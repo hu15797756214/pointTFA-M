@@ -19,8 +19,11 @@ _conda activate tfa_<br>
 _conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge_<br>
 _pip install -r requirements.txt_<br>
 
+
 Download datasets and pre-trained models, put them in the right paths
 --------------------------------------------------------------------------
+For specific model data and pre-trained weights, please refer to **PointTFA**.
+
 ./DATA |<br>
 -- labels.json |<br>
 -- templates.json |<br>
