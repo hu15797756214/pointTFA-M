@@ -54,4 +54,4 @@ For modelnet10 dataset:<br>
 CUDA_VISIBLE_DEVICES=0 python **main_modelnet10_image_mm.py** --config  **configs/modelnet10.yaml**
 
 For ScanObjectNN dataset:<br>
-CUDA_VISIBLE_DEVICES=0 python **main_ScanObjectNN_image_mm.py** --config **configs/ScanObjectNN.yaml**
+CUDA_VISIBLE_DEVICES=0 python **main_ScanObjectNN_image_mm.py** --config **configs/scanobjectnn.yaml**
