@@ -16,11 +16,11 @@ to increased computational costs. Meanwhile, although 3D point clouds provide co
 
 ```
 
-_The code is tested with CUDA==11.0 and pytorch==1.10.1
-_conda create -n tfa python=3.7.15
-_conda activate tfa
-_conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge_<br>
-_pip install -r requirements.txt
+The code is tested with CUDA==11.0 and pytorch==1.10.1
+conda create -n tfa python=3.7.15
+conda activate tfa
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge_<br>
+pip install -r requirements.txt
 
 ```
 
@@ -48,14 +48,11 @@ The projection network adopts the **_[PointCLIP](https://github.com/ZrrSkywalker
 Get Started
 --------------------------------------------------------
 **Configs**
-
 The running configurations can be modified in **"configs/dataset.yaml"**. It includes parameter settings related to two categories: images and point clouds, and can also handle separate tuning for **1~16 shot** counts. You can edit **search_scale**, **search_step**, **init_beta**, **init_alpha**, **init_gamma**, and **init_alpha** for fine-grained tuning and hyperparameter search settings. Note that for the first run, the parameters **load_cache, load_pre_feat, load_RMC, load_img_feat, load_image_cache, and image_load_RMC** are set to **False** for data preprocessing. For subsequent runs, they can be set to True to speed up hyperparameter tuning.
 
 *Running*
 -------------------------------------------------
-
 ```
-
 For modelnet40 dataset:
 CUDA_VISIBLE_DEVICES=0 python main_modelnet40_image_mm.py --config configs/modelnet40.yaml
 
