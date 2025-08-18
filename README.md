@@ -41,7 +41,7 @@ Get Started
 --------------------------------------------------------
 **Configs**
 
-The running configurations can be modified in **"configs/dataset.yaml"**. It includes parameter settings related to two categories: images and point clouds, and can also handle separate tuning for **1~16 shot** counts. You can edit **search_scale**, **search_step**, **init_beta**, **init_alpha**, **init_gamma**, and **init_alpha** for **fine-grained** tuning and hyperparameter search settings. Note that for the first run, the parameters **load_cache, load_pre_feat, load_RMC, load_img_feat, load_image_cache, and image_load_RMC** are set to **False** for data preprocessing. For subsequent runs, they can be set to True to speed up hyperparameter tuning.
+The running configurations can be modified in **"configs/dataset.yaml"**. It includes parameter settings related to two categories: images and point clouds, and can also handle separate tuning for **1~16 shot** counts. You can edit **search_scale**, **search_step**, **init_beta**, **init_alpha**, **init_gamma**, and **init_alpha** for fine-grained tuning and hyperparameter search settings. Note that for the first run, the parameters **load_cache, load_pre_feat, load_RMC, load_img_feat, load_image_cache, and image_load_RMC** are set to **False** for data preprocessing. For subsequent runs, they can be set to True to speed up hyperparameter tuning.
 
 *Running*
 -------------------------------------------------
