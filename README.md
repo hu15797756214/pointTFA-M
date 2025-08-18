@@ -13,17 +13,23 @@ to increased computational costs. Meanwhile, although 3D point clouds provide co
 
 **Install environments**
 ---------------------------------------------
+
+```
+@Override
 _The code is tested with CUDA==11.0 and pytorch==1.10.1_<br>
 _conda create -n tfa python=3.7.15_<br>
 _conda activate tfa_<br>
 _conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge_<br>
 _pip install -r requirements.txt_<br>
 
+```
 
 Download datasets and pre-trained models, put them in the right paths
 --------------------------------------------------------------------------
 For specific model data and pre-trained weights, please refer to **[PointTFA](https://github.com/user-attachments/assets/a0037e33-5a68-40c8-8435-842ba6b6b9bd)**.
 
+```
+@Override
 ./DATA |<br>
 -- labels.json |<br>
 -- templates.json |<br>
@@ -34,6 +40,7 @@ For specific model data and pre-trained weights, please refer to **[PointTFA](ht
 -- ckpt_pointbert_ULIP-2.pt<br>
 
  **projection net**<br>
+```
  --------------------------
 The projection network adopts the **_[PointCLIP](https://github.com/ZrrSkywalker/PointCLIP)_** model, because it features training-free capability and can well balance model complexity and performance.
 
