@@ -55,13 +55,13 @@ The running configurations can be modified in **"configs/dataset.yaml"**. It inc
 
 ```
 
-For modelnet40 dataset:<br>
-CUDA_VISIBLE_DEVICES=0 python **main_modelnet40_image_mm.py** --config **configs/modelnet40.yaml**
+For modelnet40 dataset:
+CUDA_VISIBLE_DEVICES=0 python main_modelnet40_image_mm.py --config configs/modelnet40.yaml
 
-For modelnet10 dataset:<br>
-CUDA_VISIBLE_DEVICES=0 python **main_modelnet10_image_mm.py** --config  **configs/modelnet10.yaml**
+For modelnet10 dataset:
+CUDA_VISIBLE_DEVICES=0 python main_modelnet10_image_mm.py --config  configs/modelnet10.yaml
 
 For ScanObjectNN dataset:<br>
-CUDA_VISIBLE_DEVICES=0 python **main_ScanObjectNN_image_mm.py** --config **configs/scanobjectnn.yaml**
+CUDA_VISIBLE_DEVICES=0 python main_ScanObjectNN_image_mm.py --config configs/scanobjectnn.yaml
 
 ```
