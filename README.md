@@ -26,7 +26,7 @@ _pip install -r requirements.txt
 
 Download datasets and pre-trained models, put them in the right paths
 --------------------------------------------------------------------------
-For specific model data and pre-trained weights, please refer to **[here]([https://github.com/salesforce/ULIP?tab=readme-ov-file](https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fconsole.cloud.google.com%2Fstorage%2Fbrowser%2Fsfr-ulip-code-release-research&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fstorage%2Fbrowser%2Fsfr-ulip-code-release-research&ifkv=AdBytiMmiB3YBi2in0IzwvApKHEsTHrJCcrSIKUHV4rTFmYE9fLRTxqZ0kwDupDBAUXPgk6V_Rmq&osid=1&passive=1209600&service=cloudconsole&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-2144236778%3A1755487298064927))**.
+For specific model data and pre-trained weights, please refer to **[here](https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fconsole.cloud.google.com%2Fstorage%2Fbrowser%2Fsfr-ulip-code-release-research&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fstorage%2Fbrowser%2Fsfr-ulip-code-release-research&ifkv=AdBytiMmiB3YBi2in0IzwvApKHEsTHrJCcrSIKUHV4rTFmYE9fLRTxqZ0kwDupDBAUXPgk6V_Rmq&osid=1&passive=1209600&service=cloudconsole&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-2144236778%3A1755487298064927)**.
 
 ```
 
