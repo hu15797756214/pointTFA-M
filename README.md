@@ -15,7 +15,7 @@ to increased computational costs. Meanwhile, although 3D point clouds provide co
 ---------------------------------------------
 
 ```
-@Override
+
 _The code is tested with CUDA==11.0 and pytorch==1.10.1_<br>
 _conda create -n tfa python=3.7.15_<br>
 _conda activate tfa_<br>
@@ -29,7 +29,7 @@ Download datasets and pre-trained models, put them in the right paths
 For specific model data and pre-trained weights, please refer to **[PointTFA](https://github.com/user-attachments/assets/a0037e33-5a68-40c8-8435-842ba6b6b9bd)**.
 
 ```
-@Override
+
 ./DATA |<br>
 -- labels.json |<br>
 -- templates.json |<br>
@@ -54,7 +54,7 @@ The running configurations can be modified in **"configs/dataset.yaml"**. It inc
 -------------------------------------------------
 
 ```
-@Override
+
 For modelnet40 dataset:<br>
 CUDA_VISIBLE_DEVICES=0 python **main_modelnet40_image_mm.py** --config **configs/modelnet40.yaml**
 
