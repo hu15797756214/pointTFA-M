@@ -35,7 +35,7 @@ For specific model data and pre-trained weights, please refer to **[PointTFA](ht
 
  **projection net**<br>
  --------------------------
-The projection network adopts the **_PointCLIP_** model, because it features training-free capability and can well balance model complexity and performance.
+The projection network adopts the **_[PointCLIP](https://github.com/ZrrSkywalker/PointCLIP)_** model, because it features training-free capability and can well balance model complexity and performance.
 
 Get Started
 --------------------------------------------------------
