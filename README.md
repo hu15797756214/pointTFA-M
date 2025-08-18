@@ -22,7 +22,7 @@ _pip install -r requirements.txt_<br>
 
 Download datasets and pre-trained models, put them in the right paths
 --------------------------------------------------------------------------
-For specific model data and pre-trained weights, please refer to **PointTFA**.
+For specific model data and pre-trained weights, please refer to **[PointTFA](https://github.com/user-attachments/assets/a0037e33-5a68-40c8-8435-842ba6b6b9bd)**.
 
 ./DATA |<br>
 -- labels.json |<br>
